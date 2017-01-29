@@ -1,12 +1,17 @@
-# Site settings
-title: Solo, a Jekyll Theme
-tag_text: Solo
-description: Solo is a Jekyll theme that supports single-page websites only, but supports them well. Yes, it’s responsive.
+# Setup
+title:        Project or Site name
+tagline:      A responsive theme for your project on GitHub Pages
+baseurl:      ""
+paginate:     1
 
-# Build settings
+# About/contact
+author:
+  name:       Author name
+  url:        http://yourhomepage.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
 markdown: kramdown
-exclude: ["README.md"]
-sass:
-  style: compressed
-
-theme: jekyll-theme-cayman
