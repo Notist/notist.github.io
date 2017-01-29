@@ -1,13 +1,15 @@
 # Setup
-title:        Project or Site name
-tagline:      A responsive theme for your project on GitHub Pages
+title:        Notist
+tagline:      Annotate Everything
 baseurl:      ""
-paginate:     1
+# paginate:     1
+paginate:     0
 
 # About/contact
 author:
-  name:       Author name
-  url:        http://yourhomepage.com 
+  # name:       Notist - Dartmouth COSC 98 Group (Senior Design and Implementation Project)
+  name:       Angela Zhu, Byrne Hollander, Charlotte Blanc, Ethan Blackwood, Mark Erwin, Peter Loomis, Wes Thompson
+  url:        http://dartmouth.smartcatalogiq.com/en/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-98
 
 # Gems
 gems:
