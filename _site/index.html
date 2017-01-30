@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pitch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/style.css?v=3208c04a023913e67b58d60159c7d76151251d48">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Notist</h1>
+      <h2 class="project-tagline">Annotate Everything</h2>
+      <a href="https://github.com/Notist" class="btn">View on GitHub</a>
+      <p><img src="./images/notist_group_small.jpg" alt="" /></p>
+      <h5 class="member-names">(from left to right: Mark, Charlotte, Wes, Byrne, Ethan, Peter, Angela)</h5>
+      
+    </section>
+
+    <section class="main-content">
+      <h1 id="pitch">Pitch</h1>
+
+<p>The Internet is such a vast collection of ideas and information that it’s easy to miss things that are relevant to you, forget about interesting things you read, or get stuck in a bubble of homogeneous opinions. Our goal is to facilitate the process of acquiring, synthesizing and annotating online information about any topic, for anyone who is looking for a more interesting and principled way to browse the web.</p>
+
+<p>To address this issue, we are creating an annotation tool called Notist that lets people annotate sites and share them in groups or keep them in a personal notebook. We hope to do this by creating a Chrome browser plugin and companion website. On the website’s dashboard, we will allow for the creation of various groups or personal notebooks where annotations and discussions are shared. When you view the article on the web, annotations from previous readers automatically load.</p>
+
+<p>Unlike other web annotation services, we would also like ours to have a major social component. For example, friends could create readings list where they recommend each other articles and share notes. Users also follow other people using the platform to see what they’re reading and how they’re reacting. We would also like to create a social recommendation engine that pushes users to read articles they wouldn’t typically come across.</p>
+
+<p>Our target users are anyone and everyone who want to organize, annotate, and share their online browsing.</p>
+
+<h1 id="broader-impact">Broader Impact</h1>
+
+<p>We think that the most popular current methods of discovering web content, namely Google and Facebook, tend to push users toward consuming information that reinforces their existing viewpoints, and also do not help users remember things they saw even a few days ago. Furthermore, no productive discussion about online content ever takes place, since Internet users often end up operating in an echo chamber of their like-minded peers. Notist will allow Internet users to find content that appeals to them and may also broaden their perspectives, and then participate in a conversation about said content with their friends or with the entire Notist community.</p>
+
+<h1 id="strategy">Strategy</h1>
+<p>We will first create a REST API with Node and Express for adding and deleting website annotations and storing them in a RethinkDB database. We will then make a Chrome extension using Javascript which will allow a user to annotate webpages. Next, in the web application, we will add functionality that allows users to organize their annotations into notebooks. We aim to have this minimum viable product by the end of this term.</p>
+
+<p>We plan on doing pair programming and we will have code review sessions which will ensure proper testing of code. We will also use test-driven development and write automated tests using Javascript testing frameworks.</p>
+
+<h1 id="implementation">Implementation</h1>
+<p>We will use the React and Redux JavaScript libraries for creating frontend UI components and managing application state. Our design will be based on Google’s material design UI. We will have a backend Node server hosted on Heroku and a RethinkDB database. Our primary source of data will be from the notes and annotations that users create with our Chrome extension while visiting a web page. We will use PassportJS for social network integration and managing authentication. We will use git for version control.</p>
+
+<h1 id="originally-a-feature-of-the-web">Originally a feature of the web</h1>
+<blockquote>
+  <p>Back in 1993, when Eric Bina and I were first building Mosaic, it seemed obvious to us that users would want to annotate all text on the web—our idea was that each Web page would be a launchpad for insight and debate about its own contents. So we built a feature called “group annotations” right into the browser—and it worked great—all users could comment on any page and discussions quickly ensued. Unfortunately, our implementation at that time required a server to host all the annotations, and we didn’t have the time to properly build that server, which would obviously have had to scale to enormous size. And so we dropped the entire feature.</p>
+</blockquote>
+
+<p>– Marc Andreessen for <a href="http://www.businessinsider.com/theres-a-feature-that-was-supposed-be-in-web-browsers-from-the-very-beginning-but-it-was-dropped-at-the-last-minute-2012-10"><em>Business Insider</em></a></p>
+
+<!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
+
+<h3 id="group-view-mockup">Group view mockup</h3>
+
+<p><img src="./images/shared_mockup.png" alt="" /></p>
+
+<h3 id="hypothesis-group-view">Hypothes.is group view</h3>
+
+<p><img src="./images/hypothesis_group_view.png" alt="" /></p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="http://github.com/Notist/notist.github.io">notist.github.io</a> is maintained by <a href="http://github.com/Notist">Notist</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+</html>
