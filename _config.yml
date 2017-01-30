@@ -1,18 +1,5 @@
-# Setup
-title:        Notist
-tagline:      Annotate Everything
-baseurl:      ""
-# paginate:     1
-paginate:     0
-
-# About/contact
-author:
-  name:       Angela Zhu, Byrne Hollander, Charlotte Blanc, Ethan Blackwood, Mark Erwin, Peter Loomis, Wes Thompson for Dartmouth's COSC 98 class (Senior Design and Implementation Project)
-  url:        http://dartmouth.smartcatalogiq.com/en/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-98
-
-# Gems
-gems:
-  - jekyll-paginate
-
-#Others
-markdown: kramdown
+title: Notist
+description: Annotate Everything
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-cayman
