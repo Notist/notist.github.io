@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  "Welcome to Notist!"
-date:   2017-01-30 17:50:00
+title:  "Welcome to Jekyll!"
+date:   2016-02-12 17:50:00
 categories: main
 ---
 

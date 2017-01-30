@@ -7,8 +7,7 @@ paginate:     0
 
 # About/contact
 author:
-  # name:       Notist - Dartmouth COSC 98 Group (Senior Design and Implementation Project)
-  name:       Angela Zhu, Byrne Hollander, Charlotte Blanc, Ethan Blackwood, Mark Erwin, Peter Loomis, Wes Thompson
+  name:       Angela Zhu, Byrne Hollander, Charlotte Blanc, Ethan Blackwood, Mark Erwin, Peter Loomis, Wes Thompson for Dartmouth's COSC 98 class (Senior Design and Implementation Project)
   url:        http://dartmouth.smartcatalogiq.com/en/current/orc/Departments-Programs-Undergraduate/Computer-Science/COSC-Computer-Science-Undergraduate/COSC-98
 
 # Gems
