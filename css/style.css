@@ -58,3 +58,38 @@ footer {
 .red {
   margin-right: 10px;
 }
+
+.smaller-screens {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .line1 {
+    font-size: 20px;
+  }
+
+  .line3 {
+    font-size: 17px;
+  }
+
+  .line2 {
+    font-size: 13px;
+  }
+
+  .parallax-container {
+    height: 300px !important;
+  }
+
+  .smaller-screens {
+    display: inline;
+  }
+
+  .bigger-screens {
+    display: none;
+  }
+
+  .bottom-padding {
+    margin-bottom: 10px;
+  }
+
+}
