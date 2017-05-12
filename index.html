@@ -84,7 +84,8 @@
     </div>
     <div class="center">
       <div>Here's our slide deck from our midterm presentation:</div>
-      <iframe src="https://drive.google.com/open?id=0B9UCa2wfMfUMNEFMSVpPT2FieEU" width="900" height="600" frameborder="0"></iframe>
+      <div id="slides"></div>
+      <!-- <iframe src="https://drive.google.com/open?id=0B9UCa2wfMfUMNEFMSVpPT2FieEU" width="900" height="600" frameborder="0"></iframe> -->
     </div>
   </div>
 
@@ -101,6 +102,8 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
   <script src='js/init.js'></script>
+  <script src="/js/pdfobject.min.js"></script>
+  <script>PDFObject.embed("/slides.pdf", "#slides");</script>
 
   </body>
 </html>

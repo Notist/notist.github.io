@@ -5,6 +5,14 @@
   width: auto;
 }
 
+.pdfobject-container {
+  height: 600px;
+  width: 900px;
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
 .title {
   display: flex;
   flex-direction: column;
@@ -88,27 +96,27 @@
   background: #E74B37;
 }
 .login_card{
-  background-color:#FFFFFF; 
+  background-color:#FFFFFF;
   width: 55%;
   height:500px;
   margin: auto;
   margin-top: 50px;
 }
 .login_text{
-    text-align: center; 
+    text-align: center;
     padding-top:5%;
 }
 .social_button_fb{
-    background-color:#3b5998; 
-    height:20%; 
-    display:block; 
-    margin: 50px auto auto auto; 
+    background-color:#3b5998;
+    height:20%;
+    display:block;
+    margin: 50px auto auto auto;
 }
 .social_button_gg{
-    background-color:#d34836; 
-    height:20%; 
-    display:block; 
-    margin: 50px auto auto auto; 
+    background-color:#d34836;
+    height:20%;
+    display:block;
+    margin: 50px auto auto auto;
 }
 
 .line1 {
