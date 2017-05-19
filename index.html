@@ -18,15 +18,22 @@
       <div class="nav-wrapper">
         <a class="brand-logo" href="http://notist.io/"><img class="confine" src="img/notist.png"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="http://notist.io/login" target="_blank">Log in</a></li>
-          <!-- <li><a href="http://notist.io/login" target="_blank">Sign up</a></li> -->
+          <a href="http://notist.io/login" target="_blank">Log in</a>
         </ul>
       </div>
     </nav>
     <div class="parallax-container center">
        <div class="line1">Annotate anything. Broaden your perspectives. Debate.</div>
        <div class="line2">Get started by downloading our Chrome extension and creating an account.</div>
-       <!-- <div class="line3">WATCH HOW TO GET STARTED</div> -->
+       <div class="line3"><a id="startedModal" href="#getStarted">WATCH HOW TO GET STARTED</a></div>
+       <div id='getStarted' class='modal'>
+         <div class='modal-content'>
+           <iframe width="800" height="500" src="https://www.youtube.com/embed/6VvM5ai3cu8?ecver=1" frameborder="0" allowfullscreen></iframe>
+         </div>
+         <div class='modal-footer'>
+           <a href="#" class="modal-action modal-close waves-effect btn" >I'm ready!</a>
+         </div>
+       </div>
        <div>
          <a class="waves-effect waves-light btn-large red lighten-1" href="http://notist.io/login" target="_blank">Sign Up</a>
          <a class="waves-effect waves-light btn-large yellow lighten-2" href="https://chrome.google.com/webstore/detail/notist/acpmllpdmdhomcokgcacekihcfihapcf" target="_blank"><i class="fa fa-chrome right" aria-hidden="true"></i>Download Chrome extension</a>
@@ -39,11 +46,124 @@
     <div class="container">
       <div class="section">
         <div class="flow-text">
-        This is pretty messy right now. Soon it'll be more informative about what Notist is and we'll have a nice gif explaining what it is and how it's designed to be used. Until then:
-        <br></br><b>
-        Annotations made by people in your groups or communities automatically load on the web. And you can easily add your own annotations!
-        <br></br>
-        Want to discuss more? You can read, vote on, and add comments easily on <a href="http://notist.io/" target="_blank">notist.io</a>!</b>
+          <h3>As of May 19 2017, this page is still undergoing significant revision (will look better soon!)</h3><br></br>
+          <h2 id="top">Table of Contents</h2>
+          <div id="toc" class="notist-description">
+            <ul>
+            <li><a href="#what">What's Notist?</a></li>
+            <li><a href="#why">How does Notist work?</a></li>
+            <li><a href="#recommendations">How do you recommend articles?</a></li>
+            <li><a href="#compatibility">Where can I use Notist?</a></li>
+            <li><a href="#but-how-do-it-know">How does Notist work behind the scenes?</a></li>
+            <li><a href="#security">Is Notist secure?</a></li>
+            <li><a href="#logo-sticker">Cool logo. Where can I buy a sticker?</a></li>
+            <li><a href="#bugs">What's the deal with bugs?</a></li>
+            <li><a href="#still-confused">Still confused?</a></li>
+            <li><a href="#new-phone-who-dis">Who made Notist?</a></li>
+            </ul>
+          </div>
+          <hr>
+          <h2 id="what">What's Notist?</h2>
+          <div class="notist-description">
+            Notist's goal is to facilitate the process of acquiring, synthesizing and annotating online information about any topic, for anyone who is looking for a more interesting and principled way to browse the web.
+            <br></br>
+            We’ve created an annotation tool that lets people annotate articles and share them in public communties, private groups, or keep them in a personal notebook. We've created a Chrome browser extension and companion website. On <a href="http://notist.io" target="_blank">notist.io</a>, we allow for the creation and discovery of groups where annotations and discussions are shared. When you view the article on the web, annotations from previous readers automatically load.
+            <br></br>
+            We also think that the most popular current methods of discovering web content, namely Google and Facebook, tend to push users toward consuming information that reinforces their existing viewpoints, and also do not help users remember things they saw even a few days ago. Furthermore, no productive discussion about online content ever takes place, since Internet users often end up operating in an echo chamber of their like-minded peers. Thus, we've created the <i>Explore</i> feed. This feed helps users find content that appeals to them and may also broaden their perspectives. They can then participate in conversations about the content with their friends and the entire Notist community.
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="why">How does Notist work?</h2>
+          <div class="notist-description">
+            <div class="c">
+              On Notist.io you can search public groups and join them. You can also create groups! In these groups, we display annotated articles that have been shared with this group. you can easily see the discussion at a glance or navigate to the article to read it and it's annotations in line.
+              <img class="d" src='img/sample-card.png' width='100%'>
+              <h6 class="center">Here's a sample article that might be in your explore feed.</h6>
+            </div>
+            <div class="c">
+              Our browser extension loads on any article online. You can highlight text, click on button, and text jumps to sidebar. Add your comment. Choose who you want to share with. Or see previous comments and reply on the article. See all public annotations or just ones made by specific groups
+              <img class="d" src='img/browser-extension.png' width='100%'>
+            </div>
+          </div>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="recommendations">How do you recommend articles?</h2>
+          <div class="notist-description">
+            Carefully.
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="compatibility">Where can I use Notist?</h2>
+          <div class="notist-description">
+            Any website in Chrome. Chrome only. But it should work on any operating system that allows chrome!
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="but-how-do-it-know">How does Notist work behind the scenes? What actually happens when I highlight an article?</h2>
+          <div class="notist-description">
+            Isomorphic app- API and client are separate
+
+            Using annotatorJS library and fuzzy anchoring
+
+            Mercury annotator . But if returns null because we don't get article, have to download the article ourself and convert it to the document object model and then get the title.
+
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="security">Is this secure? Where's the SSL cert? You gonna sell my data cuh?</h2>
+          <div class="notist-description">
+            Yeah sure. Not gonna monetize this and we are so secure. We encrypt traffic from API (serves content) and client (Notist.io - the website you see). The easier, cheaper option costs $7/month so not about that
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="logo-sticker">Cool logo. Where can I buy a sticker?</h2>
+          <div class="notist-description">
+            You want a sticker?! I want to make a sticker. Please venmo @byrne-hollander $3 and fill out this form and I'll see what I can do
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="bugs">What's the deal with bugs?</h2>
+          <div class="notist-description">
+            <ul>
+            <li>The color scheme is whack (to some)</li>
+            <li>sometimes we get the wrong URL and send that to mercury API in our</li>
+            <li>Editing group info</li>
+            <li>Editing annotation</li>
+            <li>Reporting things (and to a larger extent a moderation view)</li>
+            <li>Sharing</li>
+            <li>Inviting people to groups / password protecting groups</li>
+            <li>Better recommendations</li>
+            <li>A back button in discussion view to get back to the feed. Also need article title in the top nav bar on the discussion view</li>
+            <li>The unsubscribe / subscribe button isn’t always what I want it to say (but it works regardless!)</li>
+            <li>The group toggle isn’t reliable</li>
+            </ul>
+            Found another bug? <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScKa0F2eyB9fpUbVB9LrCGnwhnWHbiU-eJ2Ab4vPTC5LcUM9g/viewform?usp=sf_link">Submit it here</a>
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="still-confused">Still confused?</h2>
+          <div class="notist-description">
+            <a href="#getStarted">Check out our getting started video.</a>
+          </div>
+          <br></br>
+          <a href="#top">back to top</a>
+          <hr>
+          <h2 id="new-phone-who-dis">Who made Notist?</h2>
+          <div class="notist-description">
+            Notist was made by a group of Dartmouth students. It's very much a work in progress and we appreciate your support. If you have any feedback, please <a href="mailto:support@notist.io?Subject=Notist%20feedback" target="_top">send it to support@notist.io</a>. We don't have a privacy policy (yet) but we promise to never sell your data or embed weird trackers into our extension or website. Oh well we are using this thing called hotjar for analytics so we know how to improve our user experience.
+            <div class="center">
+              <img class="d" src='img/notist_group_small.jpg' width='60%'>
+            </div>
+          </div>
+          <br></br>
+        <!-- <a href="http://notist.io/" target="_blank">notist.io</a> -->
       </div>
         <!-- <div class="bigger-screens">
           <div class="row">
@@ -64,21 +184,12 @@
         </div> -->
 
         <div class="center">
-          <h2 class="header orange-text">Anything else?</h2>
-
-          <h5>Join public communities, make private groups, or maintain your annotations in personal notebooks. Notist has news feeds for everything you're a part of so you can easily see what you're friends are reading and annotation. We've made a special "explore" feed of articles that challenge your perspective, too.</h5>
-          <br> </br>
-          <img src='img/sample-card.png' width='100%'>
-          <h6>Here's a sample article that might be in your explore feed.</h6>
-          <br> </br>
           <h5>Dope, huh? Now go <a href="https://chrome.google.com/webstore/detail/notist/acpmllpdmdhomcokgcacekihcfihapcf" target="_blank">download our Chrome extension</a> and <a href="http://notist.io/login">get an account</a>.</h5>
-          <br> </br>
+          <br></br>
           <div>
             <a class="waves-effect waves-light btn-large red lighten-1" href="http://notist.io/login" target="_blank">Sign Up</a>
             <a class="waves-effect waves-light btn-large yellow lighten-2" href="https://chrome.google.com/webstore/detail/notist/acpmllpdmdhomcokgcacekihcfihapcf" target="_blank"><i class="fa fa-chrome right" aria-hidden="true"></i>Download Chrome extension</a>
           </div>
-          <br> </br>
-          <h6>Notist was made by a group of Dartmouth students. It's very much a work in progress and we appreciate your support. If you have any feedback, please <a href="mailto:support@notist.io?Subject=Notist%20feedback" target="_top">send it to support@notist.io</a>. We don't have a privacy policy (yet) but we promise to never sell your data or embed weird trackers into our extension or website. Oh well we are using this thing called hotjar for analytics so we know how to improve our user experience.</h6>
         </div>
       </div>
     </div>

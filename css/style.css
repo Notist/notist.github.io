@@ -5,6 +5,27 @@
   width: auto;
 }
 
+#startedModal {
+  color: white;
+  text-decoration: underline;
+}
+
+.c {
+  padding-bottom: 30px;
+}
+
+.d {
+  padding-top: 15px;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+#toc {
+  padding-bottom: 20px;
+}
+
 .pdfobject-container {
   height: 600px;
   width: 900px;
@@ -29,7 +50,7 @@
   align-items: center;
   height: 400px !important;
   color: white;
-  background-color: #3e7681 !important;
+  background-color: #44808c !important;
 }
 
 /* Shared */
@@ -125,21 +146,25 @@
 }
 
 .line2 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 300;
 }
 
 .line3 {
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.notist-description {
+  font-weight: 400;
 }
 
 .nav-wrapper {
-  background-color: #ea7b30;
+  background-color: #ec8523;
 }
 
 footer {
-  background-color: #3e7681 !important;
+  background-color: #44808c !important;
 }
 
 .yellow {
@@ -184,3 +209,8 @@ footer {
   }
 
 }
+
+li {
+    list-style-type: circle !important;
+    margin-left: 30px !important;
+ }
