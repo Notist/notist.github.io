@@ -46,7 +46,6 @@
     <div class="container">
       <div class="section">
         <div class="flow-text">
-          <h3>As of May 19 2017, this page is still undergoing significant revision (will look better soon!)</h3><br></br>
           <h2 id="top">Table of Contents</h2>
           <div id="toc" class="notist-description">
             <ul>
@@ -90,33 +89,36 @@
           <hr>
           <h2 id="recommendations">How do you recommend articles?</h2>
           <div class="notist-description">
-            Carefully.
+            In order to have the Explore Algorithm work from the outset, without a lot of users or articles in our database and any understanding of their “skew” or “bias”, the recommendation engine is currently restricted to users with Facebook. Our algorithm harnesses the open source project at politecho.org, which analyzes one’s facebook profile and friends to discern a user’s political bubble. The idea behind this approach to Explore is that it will learn something about the political bubble users exist in and thus show a user content outside of theirs. Once we have this data on a user, our backend begins serving them articles that are 1.5-2 standard deviations away from the average of their social media bubble. An article’s explore score is determined by the scores of the users that annotate it. Therefore, the more diverse the group of users is that annotate a specific article, the more likely it will be served to users of varying political persuasions.
+A large problem we encountered when using Politecho’s open source code was actually implementing it in the context of our platform. Their data analysis scrapes HTML of public facebook pages, which can only be done from a browser extension in order to satisfy HTTP access control standards (CORS). Therefore, although the explore feature exists on the frontend, we had to run Politecho’s initialization scripts from the browser extension, which meant implementing message passing services between the browser extension and front end web client.
           </div>
           <br></br>
           <a href="#top">back to top</a>
           <hr>
           <h2 id="compatibility">Where can I use Notist?</h2>
           <div class="notist-description">
-            Any website in Chrome. Chrome only. But it should work on any operating system that allows chrome!
+            Any website in Chrome. Chrome only. But it should work on any operating system that you can install CHrome on!
           </div>
           <br></br>
           <a href="#top">back to top</a>
           <hr>
           <h2 id="but-how-do-it-know">How does Notist work behind the scenes? What actually happens when I highlight an article?</h2>
           <div class="notist-description">
-            Isomorphic app- API and client are separate
+            We wil lbe answering this soon! ~Stay tuned~
+          <!--   Isomorphic app- API and client are separate
 
             Using annotatorJS library and fuzzy anchoring
 
-            Mercury annotator . But if returns null because we don't get article, have to download the article ourself and convert it to the document object model and then get the title.
+            Mercury annotator . But if returns null because we don't get article, have to download the article ourself and convert it to the document object model and then get the title. -->
 
           </div>
           <br></br>
           <a href="#top">back to top</a>
           <hr>
-          <h2 id="security">Is this secure? Where's the SSL cert? You gonna sell my data cuh?</h2>
+          <h2 id="security">Is this secure? You gonna sell my data cuh?</h2>
           <div class="notist-description">
-            Yeah sure. Not gonna monetize this and we are so secure. We encrypt traffic from API (serves content) and client (Notist.io - the website you see). The easier, cheaper option costs $7/month so not about that
+            Yeah we have SSL certs and we're not going to sell your data ever.
+            <!-- Yeah sure. Not gonna monetize this and we are so secure. We encrypt traffic from API (serves content) and client (Notist.io - the website you see). The easier, cheaper option costs $7/month so not about that -->
           </div>
           <br></br>
           <a href="#top">back to top</a>
